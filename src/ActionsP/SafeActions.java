@@ -12,11 +12,11 @@ import org.openqa.selenium.interactions.Actions;
 
 public class SafeActions extends SYNC {
 
-	static WebDriver driver;
+	 WebDriver driver;
 	
-	public SafeActions(){
+	public SafeActions(WebDriver driver){
 		super(driver);
-		driver = new FirefoxDriver();
+		this.driver=driver;
 		
 	}
 	
