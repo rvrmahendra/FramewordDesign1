@@ -9,7 +9,6 @@
         <methods>
           <include name="M"/>
           <include name="browserInitiate"/>
-          <include name="Startsuite"/>
         </methods>
       </class> <!-- Suite.Suiteclass -->
     </classes>

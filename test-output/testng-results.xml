@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="1" failed="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="20845" started-at="2017-08-02T10:35:25Z" finished-at="2017-08-02T10:35:46Z">
+  <suite name="Suite" duration-ms="156" started-at="2017-08-04T11:30:53Z" finished-at="2017-08-04T11:30:53Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="20845" started-at="2017-08-02T10:35:25Z" finished-at="2017-08-02T10:35:46Z">
+    <test name="Test" duration-ms="156" started-at="2017-08-04T11:30:53Z" finished-at="2017-08-04T11:30:53Z">
       <class name="Suite.Suiteclass">
-        <test-method status="PASS" signature="Startsuite()[pri:0, instance:Suite.Suiteclass@482f8f11]" name="Startsuite" is-config="true" duration-ms="31" started-at="2017-08-02T16:05:25Z" finished-at="2017-08-02T16:05:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Startsuite -->
-        <test-method status="PASS" signature="browserInitiate(java.lang.String)[pri:0, instance:Suite.Suiteclass@482f8f11]" name="browserInitiate" is-config="true" duration-ms="20173" started-at="2017-08-02T16:05:25Z" finished-at="2017-08-02T16:05:46Z">
+        <test-method status="FAIL" signature="browserInitiate(java.lang.String)[pri:0, instance:Suite.Suiteclass@29ee9faa]" name="browserInitiate" is-config="true" duration-ms="0" started-at="2017-08-04T17:00:53Z" finished-at="2017-08-04T17:00:53Z">
           <params>
             <param index="0">
               <value>
@@ -19,25 +15,25 @@
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitiate -->
-        <test-method status="FAIL" signature="M()[pri:0, instance:Suite.Suiteclass@482f8f11]" name="M" duration-ms="32" started-at="2017-08-02T16:05:46Z" finished-at="2017-08-02T16:05:46Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-	at Module.Loginpage.Sigin(Loginpage.java:17)
-	at Suite.Suiteclass.M(Suiteclass.java:23)
+	at ConfigurationManager.Configmanger.Firefoxprofile(Configmanger.java:28)
+	at Base.Firefox.profilepresent(Firefox.java:38)
+	at Base.Firefox.Init(Firefox.java:18)
+	at Base.BaseY.setDriver(BaseY.java:40)
+	at Base.BaseY.Initialbrowser(BaseY.java:25)
+	at Base.BaseY.browserInitiate(BaseY.java:18)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:170)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:104)
 	at org.testng.TestRunner.privateRun(TestRunner.java:774)
 	at org.testng.TestRunner.run(TestRunner.java:624)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
@@ -55,6 +51,14 @@
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitiate -->
+        <test-method status="SKIP" signature="Startsuite()[pri:0, instance:Suite.Suiteclass@29ee9faa]" name="Startsuite" is-config="true" duration-ms="0" started-at="2017-08-04T17:00:53Z" finished-at="2017-08-04T17:00:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Startsuite -->
+        <test-method status="SKIP" signature="M()[pri:0, instance:Suite.Suiteclass@29ee9faa]" name="M" duration-ms="0" started-at="2017-08-04T17:00:53Z" finished-at="2017-08-04T17:00:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- M -->

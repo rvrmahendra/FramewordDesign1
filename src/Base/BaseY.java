@@ -1,5 +1,7 @@
 package Base;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
@@ -7,29 +9,35 @@ import org.testng.annotations.Parameters;
 
 public class BaseY {
 
-	public static WebDriver driver;
+	public WebDriver driver;
 	BrowserProvider bp=new BrowserProvider();
 	@Parameters({"browser"})
 	@BeforeClass
-	public void browserInitiate(String browser)
+	public void browserInitiate(String browser) throws IOException
 	{
-		setDriver(browser);
+		Initialbrowser(browser);
+		//driver.get("http://www.gmail.com");
 		System.out.println("e43");
 	}
 	
-	public WebDriver getDriver(){
-		System.out.println("e45");
+	
+	public void Initialbrowser(String browser) throws IOException{
+		setDriver(browser);
+		
+	}
+	public WebDriver getDriver()
+	{
 		return driver;
 	}
-
-	public void setDriver(WebDriver driver){
-		System.out.println("e46");
-		this.driver=driver;
+	public  void setDriver(WebDriver driver)
+	{
+		this.driver = driver;
 	}
-
-	public void setDriver(String browser){
+	
+	public WebDriver setDriver(String browser) throws IOException{
 		//String f="ff";
 		System.out.println("e44");
 		driver=bp.meth(browser).Init();
+		return driver;
 	}
 }

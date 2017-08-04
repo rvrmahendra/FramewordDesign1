@@ -5,7 +5,7 @@ import ActionsP.*;
 import Locator.*;
 
 public class Loginpage extends SafeActions implements LoginLocator {
-	WebDriver driver;
+	public WebDriver driver;
 public Loginpage(WebDriver driver) {
 		// TODO Auto-generated constructor stub
 	super(driver);
@@ -14,8 +14,11 @@ public Loginpage(WebDriver driver) {
 
 public void Sigin(){
 	System.out.println("e5");
-	driver.get("http://www.gmail.com");
-	driver.findElement(emailid).sendKeys("a@a.com");
+	//driver.get("http://www.gmail.com");
+	
+	
+	safeClearAndType(emailid,"a@a.com");
+	System.out.println("e6");
 }
 
 

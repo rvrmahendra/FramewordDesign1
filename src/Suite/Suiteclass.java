@@ -1,20 +1,23 @@
 package Suite;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import Base.*;
 import Module.*;
 public class Suiteclass extends BaseY{
 
-	private WebDriver driver;
+	public WebDriver driver;
 	Loginpage login;
 
-	@BeforeTest
+	@BeforeClass
 	public void Startsuite(){
 	
 		login=new Loginpage(getDriver());
+		getDriver().get("http://www.gmail.com");
 		
 	}
 	@Test
