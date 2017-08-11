@@ -5,8 +5,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.events.WebDriverEventListener;
 
+
+import org.apache.log4j.*;
 public class WebListener implements WebDriverEventListener{
 
+	private Logger log = Logger.getLogger("WebListener");
 	@Override
 	public void afterChangeValueOf(WebElement arg0, WebDriver arg1) {
 		// TODO Auto-generated method stub

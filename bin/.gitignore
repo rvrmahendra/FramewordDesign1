@@ -1,7 +1,3 @@
-/ActionsP/
 /Base/
-/ConfigurationManager/
-/Locator/
-/Module/
-/Suite/
+/log4j.xml
 /listener/

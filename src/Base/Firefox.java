@@ -16,7 +16,7 @@ WebDriver driver;
 	public WebDriver Init() throws IOException
 	{
 		if(profilepresent()){
-		
+			System.out.println("e55");
 				String profilename=config.getprofile("sys");
 				ProfilesIni firProfiles = new ProfilesIni();
 				FirefoxProfile wbdrverprofile = firProfiles.getProfile("profilename");
@@ -26,13 +26,13 @@ WebDriver driver;
 		}
 		else{
 			
-		
+			System.out.println("e56");
 		driver =new FirefoxDriver();
 		return driver ;
 		}
 	}
 
-	private boolean profilepresent() {
+	private boolean profilepresent() throws IOException {
 		// TODO Auto-generated method stub
 		
 		return config.Firefoxprofile();
